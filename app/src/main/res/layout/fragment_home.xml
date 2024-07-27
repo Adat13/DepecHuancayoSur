@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Único contenedor para ScrollView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Primer LinearLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/background"
+                tools:context=".MainActivity">
+
+
+                <!-- Días -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/cardBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <!-- Días -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tvDays"
+                                style="@style/DigitalText"
+                                android:textSize="110sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/textViewDays"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="DÍAS"
+                                style="@style/DigitalText"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <!-- Horas, Minutos, Segundos -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <!-- Horas -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/tvHours"
+                                    style="@style/DigitalText"
+                                    android:textSize="50sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/textViewHours"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="HORAS"
+                                    style="@style/DigitalText"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <!-- Minutos y Segundos -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/tvMinutes"
+                                        style="@style/DigitalText"
+                                        android:textSize="40dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:id="@+id/textViewMinutes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="MINUTOS"
+                                        style="@style/DigitalText"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/tvSeconds"
+                                        style="@style/DigitalText"
+                                        android:textSize="30sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:id="@+id/textViewSeconds"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="SEGUNDOS"
+                                        style="@style/DigitalText"
+                                        android:textColor="@color/white"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/cardBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/completarpago"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+
+                            android:src="@drawable/fondoremasterizados" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MIS INSCRITOS"
+                            style="@style/DigitalText"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/cardBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/polos"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:backgroundTint="@color/white"
+                            android:scaleType="fitXY"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/inscripcion_icon" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="INSCRIBIR"
+                            android:textColor="@color/white"
+                            style="@style/DigitalText"
+                            android:textSize="16sp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="189dp"
+                            android:layout_marginBottom="186dp"
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/cardBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/biblia"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:backgroundTint="@color/white"
+                            android:scaleType="fitXY"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/biblia_icon" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BIBLIA"
+                            android:textColor="@color/white"
+                            style="@style/DigitalText"
+                            android:textSize="16sp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="189dp"
+                            android:layout_marginBottom="186dp"
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/cardBackground"
+                    app:cardCornerRadius="8dp"
+                    android:visibility="visible"
+
+                    app:cardElevation="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/adminMisInscritos"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:scaleType="fitXY"
+                            android:layout_centerHorizontal="true"
+
+
+                            android:src="@drawable/validar_vaucher_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VALIDAR VAUCHERS"
+
+                            android:textSize="16sp"
+                            style="@style/DigitalText"
+                            android:textColor="@color/white"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true" />
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="189dp"
+                            android:layout_marginBottom="186dp"
+                            />
+                    </RelativeLayout>
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/cardBackground"
+                    app:cardCornerRadius="8dp"
+                    android:visibility="visible"
+                    app:cardElevation="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/inscripcion"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:scaleType="fitXY"
+
+                            android:src="@drawable/iconqr_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ESCANER"
+
+                            android:textSize="16sp"
+                            style="@style/DigitalText"
+                            android:textColor="@color/white"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/cardBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/galeria"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:backgroundTint="@color/white"
+                            android:scaleType="fitXY"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/baseline_photo_library_24" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GALERIA"
+                            android:textColor="@color/white"
+                            style="@style/DigitalText"
+                            android:textSize="16sp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="189dp"
+                            android:layout_marginBottom="186dp"
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/cardBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/verInscritosCampamento"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:backgroundTint="@color/white"
+                            android:scaleType="fitXY"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/icon_inscritos_campamaneto" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="INSCRITOS CAMPAMENTO"
+                            android:textColor="@color/white"
+                            style="@style/DigitalText"
+                            android:textSize="16sp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="189dp"
+                            android:layout_marginBottom="186dp"
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

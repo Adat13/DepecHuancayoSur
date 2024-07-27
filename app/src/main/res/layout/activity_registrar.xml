@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegistrarActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="343dp"
+        android:layout_height="550dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="313dp"
+            android:layout_height="247dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logocircular_depec" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+
+        <EditText
+            android:id="@+id/correo"
+            android:layout_width="320dp"
+            android:layout_height="52dp"
+            android:background="@drawable/marcoedit"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:hint="Correo electrónico"
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/GrisOscuro"
+            android:textColorHint="@color/Gris"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="320dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:background="@drawable/marcoedit"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:ems="10"
+            android:hint="Contraseña(Tu número de DNI)"
+            android:inputType="textPassword"
+            android:textSize="15dp"
+            android:textColor="@color/GrisOscuro"
+            android:textColorHint="@color/Gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/confirmarPassword"
+            android:layout_width="320dp"
+            android:layout_height="52dp"
+            android:background="@drawable/marcoedit"
+            android:ems="10"
+            android:hint="Confirmar contraseña"
+            android:inputType="textPassword"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:layout_gravity="center"
+            android:paddingBottom="8dp"
+            android:textColor="@color/GrisOscuro"
+            android:textColorHint="@color/Gris"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <Button
+            android:id="@+id/registrarbtn"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="registrarusuario"
+            android:text="Registrar"
+            android:textSize="15dp"
+            android:background="@drawable/boton_redondo"
+
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/baseline_app_registration_24"
+            android:paddingHorizontal="60dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

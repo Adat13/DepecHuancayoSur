@@ -1,0 +1,495 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".InscripcionClass"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:padding="16dp"
+           >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombres y apellidos"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Rounded">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Rounded"
+                android:hint="Fecha de nacimiento">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextDOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textViewAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Edad: "
+                android:textSize="16sp"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewDNIQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="¿Tiene DNI azul?"
+                android:paddingTop="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/checkBoxDNIYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="Sí"/>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/checkBoxDNINo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="No"/>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Rounded"
+                android:hint="Nombre del tutor"
+                android:paddingStart="15dp">
+
+                <EditText
+                    android:id="@+id/editTextTutorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Rounded"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+
+                android:hint="Número de teléfono del tutor"
+               >
+
+
+                <EditText
+                    android:id="@+id/editTextTutorNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
+                app:cardCornerRadius="10dp"
+
+
+
+                app:cardElevation="4dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@android:color/holo_green_light">
+
+                <ImageView
+                    android:id="@+id/imageViewAuthorization"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:visibility="gone"
+                    android:background="@color/white"
+
+
+                    android:src="@drawable/icon_subir_autprizacion"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@android:color/holo_green_light">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <Spinner
+                        android:id="@+id/spinnerChurch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/CustomSpinnerStyle"
+                        android:dropDownItemStyle="@style/CustomSpinnerItemStyle" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@android:color/holo_green_light">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <Spinner
+                        android:id="@+id/spinnerGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        style="@style/CustomSpinnerStyle"
+                        android:dropDownItemStyle="@style/CustomSpinnerItemStyle"
+                        />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Especifique su iglesia"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Rounded"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextOtherChurch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Rounded"
+
+                android:hint="Número de celular">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Rounded"
+
+                android:hint="DNI">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextDNI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Rounded"
+
+                android:hint="Alergia o enfermedad que padece">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextAlergia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textViewCuposRestantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Cupos restantes para llevar carpa::"
+                android:paddingTop="8dp"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxCarpa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+
+                android:text="¿Llevará carpa?"
+
+                android:paddingTop="8dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerCarpaPersonas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/carpas_options"
+                android:visibility="gone"
+                android:paddingStart="15dp"
+
+                android:layout_marginTop="8dp"
+                />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el código de carpa compartida"
+                android:paddingStart="15dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Rounded"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextCodigoCarpa"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+
+
+
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textViewCodigoCarpa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Código de carpa: "
+                android:layout_marginStart="15dp"
+                android:paddingStart="15dp"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:paddingTop="8dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Rounded"
+
+                android:hint="Ingrese el monto de su primer pago">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextAmountPaid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonUploadPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subir comprobante de pago"
+                android:background="@drawable/boton_redondo"
+                android:layout_marginTop="16dp"/>
+
+            <ImageView
+                android:id="@+id/imageViewPaymentReceipt"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"
+
+                android:layout_marginTop="8dp"/>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@android:color/holo_green_light">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <Spinner
+                        android:id="@+id/spinnerPayment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/payment_options"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Primera cuota"
+                    >
+
+                    <EditText
+                        android:id="@+id/editTextFirstInstallment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:visibility="gone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Fecha"
+                    >
+
+                    <EditText
+                        android:id="@+id/editTextFirstInstallmentDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:visibility="gone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Segunda cuota"
+                    >
+
+                    <EditText
+                        android:id="@+id/editTextSecondInstallment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:visibility="gone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Fecha">
+
+                    <EditText
+                        android:id="@+id/editTextSecondInstallmentDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:visibility="gone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Tercera cuota">
+
+                    <EditText
+                        android:id="@+id/editTextThirdInstallment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:visibility="gone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Fecha">
+
+                    <EditText
+                        android:id="@+id/editTextThirdInstallmentDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:visibility="gone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonInscribirse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inscribirse"
+                android:layout_gravity="center"
+                android:background="@drawable/boton_redondo"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

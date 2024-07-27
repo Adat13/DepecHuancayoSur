@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "403075888484",
+    "project_id": "depec-huancayo-sur",
+    "storage_bucket": "depec-huancayo-sur.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403075888484:android:bcc51c7c3aeac3e8ec7671",
+        "android_client_info": {
+          "package_name": "com.depec.depechuancayosur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403075888484-l73a85p6kak9a4tmkjvm58j0q1ifpc3s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.depec.depechuancayosur",
+            "certificate_hash": "7788540b17c6b723f9bff398b98ce6ca96862ed5"
+          }
+        },
+        {
+          "client_id": "403075888484-171vt0mdc49tbto5jh22tau077be49jr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu-xU2x5JQTxCdmzDAZBL4izTDm6eOjyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403075888484-171vt0mdc49tbto5jh22tau077be49jr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

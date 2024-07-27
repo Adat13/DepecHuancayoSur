@@ -1,0 +1,145 @@
+<!-- activity_display_qr_data.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nombre: "
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/text_view_age"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/text_view_age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Edad: "
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/text_view_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/text_view_dni"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/text_view_dni"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="DNI: "
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/text_view_age"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/text_view_church"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/text_view_church"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Iglesia: "
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/text_view_dni"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/text_view_gender"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/text_view_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Genero: "
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/text_view_church"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/text_view_has_tent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/text_view_has_tent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tiene carpa: "
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/text_view_gender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/text_view_has_bus"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/text_view_has_bus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tiene Bus: "
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/text_view_has_tent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/text_view_has_meal"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/text_view_has_meal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Has Meal: "
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/text_view_has_bus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/text_view_bus_number"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/text_view_bus_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Bus Number: "
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/text_view_has_meal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/text_view_seat_number"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/text_view_seat_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Seat Number: "
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/text_view_bus_number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

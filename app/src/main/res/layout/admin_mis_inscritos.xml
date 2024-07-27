@@ -1,0 +1,52 @@
+<!-- activity_mis_inscritos.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/GrisOscuro"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/fondoremasterizados" />
+
+    <TextView
+        android:id="@+id/textViewTotalInReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total en revisión: 0.00"
+        android:textSize="16sp"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:id="@+id/textViewTotalVerified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total verificado: 0.00"
+        android:textSize="16sp"
+        android:layout_margin="16dp"/>
+    <Spinner
+        android:id="@+id/spinnerFiltro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:spinnerMode="dropdown"/>
+
+
+    <ListView
+        android:id="@+id/listViewMisInscritos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFC801</color>
+    <color name="purple_500">#FFC801</color>
+    <color name="purple_700">#FFC801</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#008000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Marron">#4B330F</color>
+    <color name="Gris">#A3A8B7</color>
+    <color name="CelestePastel">#BCEBE9</color>
+    <color name="AzulPastel">#746AB0</color>
+    <color name="GrisOscuro">#3C3C3C</color>
+    <color name="amarillopastel">#22729E</color>
+    <color name="Azulfav">#3F255E</color>
+    <color name="border_color">#222222</color>
+    <color name="verdefav">#070B20</color>
+    <color name="verde_verificado">#58C53F</color>
+    <color name="rojo">#FF3223</color>
+    <color name="verde_limon" />
+    <color name="Verde_limon">#A6DC53</color>
+    <color name="GrisMedio">#95A092</color>
+    <color name="grisverdoso">#E6E8E4</color>
+    <color name="colorActionBar">#A1DB45</color> <!-- Cambia "#ff0000" al color que desees -->
+
+        <color name="colorPrimary">#6200EE</color>
+        <color name="colorPrimaryDark">#3700B3</color>
+        <color name="colorAccent">#03DAC5</color>
+
+
+
+    <color name="background">#121212</color>
+        <color name="cardBackground">#1F1F1F</color>
+
+        <color name="celestePastel">#B2EBF2</color>
+        <color name="grisOscuro">#424242</color>
+    <color name="ff000000">#FF000000</color>
+
+
+</resources>

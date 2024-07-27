@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ReproductorActivity"
+    android:background="@drawable/degradado">
+
+    <!-- Contenedor principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Imagen de la canción -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="88dp" />
+
+        <ImageView
+            android:id="@+id/songImageView"
+            android:layout_width="319dp"
+            android:layout_height="291dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dni_azul" />
+
+        <!-- Título de la canción -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="34dp" />
+
+        <TextView
+            android:id="@+id/songTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Song Title"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Artista de la canción -->
+
+        <TextView
+            android:id="@+id/artistTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artist"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+
+            android:layout_gravity="start"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Barra de progreso -->
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:max="100"
+            android:thumb="@drawable/custom_seekbar_thumb"
+            android:backgroundTint="@color/Gris"
+            android:progressBackgroundTint="@color/Gris"
+            android:progressTint="@color/white"
+             />
+
+
+        <!-- Duración de la canción -->
+        <TextView
+            android:id="@+id/durationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            tools:text="00:00 / 00:00" />
+
+        <!-- Botones de reproducción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/previousButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/previus"
+                android:scaleType="fitXY"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Previous Song" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                />
+
+            <ImageButton
+                android:id="@+id/playButton"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Play"
+                android:scaleType="fitXY"
+                android:src="@drawable/circulopause" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                 />
+
+            <ImageButton
+                android:id="@+id/nextButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitXY"
+                android:contentDescription="Next Song"
+                android:src="@drawable/siguiente" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+

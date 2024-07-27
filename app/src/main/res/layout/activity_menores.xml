@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MenoresActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="333dp"
+        android:layout_height="708dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="INSCRIPCIÓN"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/marcoedit"
+                    android:backgroundTint="@color/teal_700"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="Si aún no has obtenido un permiso, puedes seguir estos pasos: sube una foto de tu documento de identidad y luego podrás presentar el permiso físico el mismo día del viaje, acompañado de un apoderado."
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/marcoedit"
+                    android:backgroundTint="@color/teal_700"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="Si deseas realizar el pago inicial de 80 soles, simplemente sube el comprobante de pago. Luego, de acuerdo al cronograma de pagos que se encuentra en la galería, podrás cancelar el resto del monto."
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre completo:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/nombresins"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:backgroundTint="@color/GrisOscuro"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:background="@drawable/marcoedit"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Número de celular :"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/numerocelular"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:background="@drawable/marcoedit"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre del apoderado :"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/apoderado"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:background="@drawable/marcoedit"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"/>
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edad :"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edadins"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:background="@drawable/marcoedit"
+                    android:textColor="@color/black"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Número de DNI :"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/numerodniins"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:background="@drawable/marcoedit"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SEC:"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/secins"
+                    android:layout_width="206dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+
+
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Si escogiste otra, escribe tu Sec:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/secopcional"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:backgroundTint="@color/GrisOscuro"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:background="@drawable/marcoedit"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Subir comprobante de pago :"
+
+
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black" />
+
+
+                <ImageView
+                    android:id="@+id/boleta"
+                    android:layout_width="155dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/canva_subir"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Indica el monto del depósito realizado :"
+                    android:textColor="@color/GrisOscuro" />
+
+                <EditText
+                    android:id="@+id/cantidadpago"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:backgroundTint="@color/GrisOscuro"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:background="@drawable/marcoedit"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Subir autorización :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/autorizacion"
+                    android:layout_width="155dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/canva_subir"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                <Button
+                    android:id="@+id/enviardatos"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/icon_send"
+                    android:drawablePadding="0dp"
+                    android:text="Inscribirse"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:background="@drawable/boton_redondo"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

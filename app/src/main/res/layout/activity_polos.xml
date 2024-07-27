@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Polos"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="326dp"
+        android:layout_height="671dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="COMPRA TU POLO "
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/marcoedit"
+                    android:backgroundTint="@color/teal_700"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="El costo del polo es de 15 soles. Si has realizado el pago de la inscripción y el polo juntos, por favor adjunta el mismo comprobante de pago. En caso de haber realizado el pago del polo por separado, por favor adjunta el comprobante de pago correspondiente a los 15 soles del costo del polo. "
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombres y apellidos :"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/nombresins"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:textSize="15dp"
+                    android:background="@drawable/marcoedit"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/black" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SEC:"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/secins"
+                    android:layout_width="206dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/white" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Si escogiste otra, escribe tu SEC :"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/otrasec"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/marcoedit"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:textSize="15dp"
+                    />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Subir comprobante de pago :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black" />
+
+
+                <ImageView
+                    android:id="@+id/boleta"
+                    android:layout_width="155dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/canva_subir"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Talla de polo :"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/talla"
+                    android:layout_width="307dp"
+                    android:layout_height="35dp"
+
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/marcoedit"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteX="-148dp"
+                    tools:layout_editor_absoluteY="667dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp" />
+
+                <Button
+                    android:id="@+id/enviardatos"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="ENVIAR"
+                    android:drawableEnd="@drawable/icon_send"
+                    android:drawablePadding="0dp"
+                    android:background="@drawable/boton_redondo"
+
+                    android:textColor="@color/black"
+                    android:layout_gravity="center" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
